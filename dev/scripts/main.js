@@ -45,6 +45,20 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  //for animate label
+  $('.form__animate').focus(function () {
+    $(this).parents('.form__block').addClass('focused');
+  });
+
+  $('.form__animate').blur(function () {
+    var inputValue = $(this).val();
+    if (inputValue == '') {
+      $(this).removeClass('filled');
+      $(this).parents('.form__block').removeClass('focused');
+    } else {
+      $(this).addClass('filled');
+    }
+  });
   //search results
   // $('.header .search__input').on('keyup', function () {
   //   $('.header .search').addClass('show-results');

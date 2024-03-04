@@ -29,17 +29,17 @@ main.main
 					.contacts-form__text Наш специалист свяжется с Вами в ближайшее время.
 				form.contacts-form__form 
 					.contacts-form__grid
-						.form__input-block
-							input.form__input(type="text" value="" name="")
+						.form__block.form__input-block
+							input.form__input.form__animate(type="text" value="" name="")
 							label.form__label ФИО *
-						.form__input-block
-							input.form__input(type="tel" value="" name="")
+						.form__block.form__input-block
+							input.form__input.form__animate(type="tel" value="" name="")
 							label.form__label Телефон *
-						.form__input-block
-							input.form__input(type="email" value="" name="")
+						.form__block.form__input-block
+							input.form__input.form__animate(type="email" value="" name="")
 							label.form__label Email *
-					.form__textarea-block
-						textarea.form__textarea
+					.form__block.form__textarea-block
+						textarea.form__textarea.form__animate
 						label.form__label Текст сообщения
 					.form__agree
 						+custom-checkbox-agree()
