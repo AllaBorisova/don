@@ -1,0 +1,134 @@
+.footer {
+  margin-top: 2rem;
+  padding-bottom: 2.7rem;
+  @media (max-width: $breakpoint-mobile) {
+    padding-bottom: 1.6rem;
+  }
+  &__inner {
+    border-radius: 1rem;
+    background: #111;
+    padding: 5rem 5rem 9.4rem 5rem;
+    background-image: url(../img/waves-footer-lg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2.8rem center;
+    background-size: 95%;
+    @media (max-width: $breakpoint-mobile) {
+      padding: 3rem;
+      background-image: none;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    max-width: 9rem;
+    @media (max-width: $breakpoint-mobile) {
+      order: 3;
+      align-self: center;
+    }
+    img {
+      display: block;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2.5rem;
+    // margin-left: auto;
+    @media (max-width: $breakpoint-tablet) {
+      max-width: 100%;
+      margin-left: 0;
+      align-items: flex-start;
+    }
+  }
+
+  &__phone {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    display: block;
+    color: $color-text-light;
+    @include hover;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 8.9rem;
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    ul {
+      @include ul-clean;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      li {
+        a {
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          color: $color-text-light;
+          @include hover;
+        }
+      }
+    }
+  }
+  &__copyright {
+    padding-top: 2rem;
+    @media (max-width: $breakpoint-tablet) {
+      padding-top: 1.6rem;
+      text-align: center;
+    }
+  }
+}
+
+.socials {
+  @include flexcc;
+  gap: 1rem;
+  justify-content: flex-start;
+  a {
+    display: flex;
+    @include wh(5rem);
+    border-radius: 50%;
+    @include tr;
+  }
+  &__link {
+    svg {
+      rect,
+      path {
+        @include tr;
+      }
+    }
+    &:hover {
+      svg {
+        rect {
+          fill: #ff7741;
+        }
+        path {
+          fill: $color-text-light;
+        }
+      }
+    }
+    &:active {
+      svg {
+        rect {
+          fill: #dd4e15;
+        }
+        path {
+          fill: $color-text-light;
+        }
+      }
+    }
+  }
+}

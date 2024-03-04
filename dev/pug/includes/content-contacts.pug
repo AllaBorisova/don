@@ -1,0 +1,46 @@
+main.main
+	.container
+		.breadcrumbs 
+						ul 
+							li 
+								a Главная 
+							li Контакты
+		.section-map 
+				.section-map__map 
+					.mapicon
+					img(src="./img/map.jpg" alt="")
+				.section-map__contacts 
+					.section-map__title.h1 Контакты
+					.section-map__subtitle Телефон для справок
+					.section-map__text 10:00 – 20:00 (Пн-Пт)
+						a(href="+7 (831) 123-45-67") +7 (831) 123-45-67
+						a(href="+7 (920) 123-65-22") +7 (920) 123-65-22
+					.section-map__subtitle Электронная почта
+					.section-map__text
+						a(href="mailto:info@donflot.ru") info@donflot.ru
+					.section-map__subtitle Причал
+					.section-map__text №8О
+					.section-map__subtitle Офис компании
+					.section-map__text 344019, г. Ростов-на-Дону, ул. Нижегородская, д.20/11
+		.contacts-form 
+			.contacts-form__block 
+				.contacts-form__info
+					.contacts-form__name Есть вопрос?
+					.contacts-form__text Наш специалист свяжется с Вами в ближайшее время.
+				form.contacts-form__form 
+					.contacts-form__grid
+						.form__input-block
+							input.form__input(type="text" value="" name="")
+							label.form__label ФИО *
+						.form__input-block
+							input.form__input(type="tel" value="" name="")
+							label.form__label Телефон *
+						.form__input-block
+							input.form__input(type="email" value="" name="")
+							label.form__label Email *
+					.form__textarea-block
+						textarea.form__textarea
+						label.form__label Текст сообщения
+					.form__agree
+						+custom-checkbox-agree()
+					button.button.button_mini.form__submit.open-popup-link(type="submit" data-mfp-src="#thanks-popup") Отправить

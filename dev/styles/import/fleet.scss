@@ -1,0 +1,190 @@
+.fleet {
+  margin-bottom: 10rem;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+  }
+  &__about {
+    display: grid;
+    gap: 12.4rem;
+    grid-template-columns: 41% auto;
+    margin-bottom: 10rem;
+    font-size: 1.6rem;
+    line-height: 140%;
+    @media (max-width: $breakpoint-mobile) {
+      margin-bottom: 3.2rem;
+      font-size: 1.4rem;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+    @media (max-width: $breakpoint-mobile) {
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
+  }
+  &__params-block {
+    margin-bottom: 10rem;
+    @media (max-width: $breakpoint-mobile) {
+      margin-bottom: 6rem;
+    }
+  }
+  &__params {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    @media (max-width: 1360px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: $breakpoint-mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+    }
+  }
+  &__param {
+    border-radius: 1rem;
+    background: #f3f3f3;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+    @media (max-width: $breakpoint-mobile) {
+      gap: 1.6rem;
+      padding: 1.6rem;
+    }
+    &-name {
+      color: rgba(17, 17, 17, 0.5);
+    }
+    &-value {
+      font-size: 2.4rem;
+    }
+  }
+}
+.team {
+  margin-bottom: 10rem;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    @media (max-width: $breakpoint-mobile) {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+  }
+  &__item {
+    display: flex;
+    gap: 3.2rem;
+    align-items: flex-end;
+    @media (max-width: $breakpoint-mobile) {
+      gap: 0.8rem;
+    }
+  }
+  &__img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex: none;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__position {
+    color: rgba(17, 17, 17, 0.5);
+    margin-bottom: 1.5rem;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+  &__name {
+    font-size: 2.4rem;
+    line-height: 120%;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.4rem;
+    }
+  }
+}
+.services {
+  margin-bottom: 10rem;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+  }
+  &__columns {
+    display: grid;
+    grid-template-columns: auto 66%;
+    gap: 2rem;
+    @media (max-width: $breakpoint-mobile) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+}
+.section-faq {
+  &__item {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid #111;
+    &:last-child {
+      border-bottom: 1px solid #111;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+    }
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 120%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.6rem;
+    }
+    svg {
+      flex: none;
+      @include tr;
+      .section-faq__item.active & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 140%;
+    padding-top: 3rem;
+    display: none;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.4rem;
+      padding-top: 1.6rem;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+}
+.map-routes {
+  &__map {
+    border-radius: 1rem;
+    overflow: hidden;
+    @media (max-width: $breakpoint-mobile) {
+      height: 60rem;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.about {
+  margin-bottom: 10rem;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+  }
+  &__items {
+    display: grid;
+    gap: 12.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 6rem;
+    @media (max-width: $breakpoint-mobile) {
+      display: flex;
+      gap: 2.8rem;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+  &__item {
+    @media (max-width: $breakpoint-mobile) {
+      flex: none;
+      width: 25rem;
+    }
+  }
+  &__count {
+    @include wh(6rem);
+    border-radius: 50%;
+    background: #e95522;
+    @include flexcc;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2.5rem;
+  }
+  &__name {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    ul {
+      padding: 0;
+      li {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  &__options {
+  }
+  &__option {
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 31% auto;
+    @media (max-width: $breakpoint-mobile) {
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+      padding: 1.6rem;
+    }
+    &:nth-child(odd) {
+      background: #f3f3f3;
+    }
+    &-name {
+      color: rgba(17, 17, 17, 0.5);
+    }
+  }
+}

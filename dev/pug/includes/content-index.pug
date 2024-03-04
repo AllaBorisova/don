@@ -1,0 +1,182 @@
+main.main
+	.section-main-slider 
+		.container 
+			.section-main-slider__block 
+				.section-main-slider__slide
+					.section-main-slider__inner
+						.section-main-slider__img
+							img(src="./img/slide1.jpg" alt="")
+						.section-main-slider__info 
+							.section-main-slider__title Речные пассажирские перевозки
+							button.button.button-ticket(href="") Купить билет
+				.section-main-slider__slide
+					.section-main-slider__inner
+						.section-main-slider__img
+							img(src="./img/slide2.jpg" alt="")
+						.section-main-slider__info 
+							.section-main-slider__title Речные пассажирские перевозки
+							button.button.button-route(href="") Выбрать маршрут
+				.section-main-slider__slide
+					.section-main-slider__inner
+						.section-main-slider__img
+							img(src="./img/slide2.jpg" alt="")
+						.section-main-slider__info 
+							.section-main-slider__title Речные пассажирские перевозки
+							button.button.button-route(href="") Выбрать маршрут
+				.section-main-slider__slide
+					.section-main-slider__inner
+						.section-main-slider__img
+							img(src="./img/slide2.jpg" alt="")
+						.section-main-slider__info 
+							.section-main-slider__title Речные пассажирские перевозки
+							button.button.button-route(href="") Выбрать маршрут
+				.section-main-slider__slide
+					.section-main-slider__inner
+						.section-main-slider__img
+							img(src="./img/slide2.jpg" alt="")
+						.section-main-slider__info 
+							.section-main-slider__title Речные пассажирские перевозки
+							button.button.button-route(href="") Выбрать маршрут
+			//- .slick-slides-count
+	.section-about 
+		.container 
+			.section-about__block 
+				.section-about__left 
+					p Основной сферой деятельности компании «ДОН» являются речные пассажирские перевозки по внутренним водным путям на скоростных пассажирских судах «Валдай 45Р».
+					img(src="./img/boat.svg" alt="")
+				.section-about__right
+					p На сегодняшний день компания располагает пятью судами на подводных крыльях «Валдай 45Р». Путешествуя, вы увидите великие русские реки, вековые монастыри и церкви, а также познакомитесь с традициями и обычаями народов России. Ваш отдых наполнится прекрасными речными пейзажами, чистым свежим воздухом, блеском речной волны и позволит узнать историю, культуру и достопримечательности малых и больших городов России.
+					p Суда на подводных крыльях, изобретённые Р.Е. Алексеевым, имеют малопогружные крылья трапециевидной или плоской формы, которые обладают высокими гидродинамическими качествами. В таких схемах используется свойство плоского крыла: уменьшение величины подъёмной силы вблизи свободной поверхности при уменьшении погружения. Благодаря этому свойству и наличию вспомогательных стабилизирующих элементов обеспечивается вертикальная, поперечная и продольная устойчивость движения судна на подводных крыльях на спокойной воде. На этом и основан принцип самостабилизации крыла, движущегося в приповерхностном слое. Этот принцип также получил название «эффект Алексеева».
+	.section-categories 
+		.container 
+			.section-categories__items 
+				.section-categories__item(href="" style="background-image:url(./img/category1.jpg)") 
+					.section-categories__title Регулярные пассажирские рейсы
+					.section-categories__text это рейсы по маршруту с возможностью купить билет в одну сторону
+					button.button.button-ticket(href="") Купить билет
+				.section-categories__item(href="" style="background-image:url(./img/category2.jpg)") 
+					.section-categories__title Экскурсионно-прогулочные рейсы
+					.section-categories__text это прогулочные и круговые рейсы (с билетом туда-обратно) по туристическим направлениям с включённой в стоимость билета экскурсионной программой.
+					button.button.button-ticket(href="") Купить билет
+	.section-routes 
+		.container 
+			.section-routes__top.section-routes-top(style="background-image:url(./img/routes-top.jpg)")
+				.section-routes-top__title Маршруты
+				.section-routes-top__desc
+					.section-routes-top__left
+						.section-routes-top__count 13
+						.section-routes-top__text Маршрутов
+					.section-routes-top__right
+						a.button.button-route(href="") Посмотреть на карте
+			.section-routes__items 
+				+card-routes('routes1.jpg', 'Дмитровка', 'Прогулочный маршрут по реке')
+				+card-routes('routes2.jpg', 'Балахна', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-routes('routes3.jpg', 'Павлово', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-routes('routes4.jpg', 'Юрино', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-routes('routes5.jpg', 'Дмитровка', 'Откройте для себя направление Юрино и его жемчужину – замок Шереметева.')
+				+card-routes('routes6.jpg', 'Балахна', 'Откройте для себя направление Юрино и его жемчужину – замок Шереметева.')
+			a.button.button_full.section-routes__show-all(href="") Все  маршруты
+	
+	.section-routes 
+		.container 
+			.section-routes__top.section-routes-top(style="background-image:url(./img/fleet-top.jpg)")
+				.section-routes-top__title Флот
+				.section-routes-top__desc
+					.section-routes-top__left
+						.section-routes-top__count 15
+						.section-routes-top__text Судов
+					.section-routes-top__right
+						a.button.button-ticket(href="") Купить билет
+			.section-routes__items 
+				+card-fleet('fleet1.jpg', 'Валдай 45-17', 'Речное пассажирское СПК')
+				+card-fleet('fleet2.jpg', 'Валдай 45-18', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-fleet('fleet3.jpg', 'Валдай 45-17', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-fleet('fleet4.jpg', 'Валдай 45-18', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-fleet('fleet5.jpg', 'Валдай 45-17', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+				+card-fleet('fleet6.jpg', 'Валдай 45-18', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
+			a.button.button_full.section-routes__show-all(href="") Все наши суда
+	
+	.section-gallery 
+		.container
+			.h2 Фотогалерея
+			.section-slider 
+				.section-slider__slide 
+					a.image-popup(href="./img/gallery1.jpg")
+						img(src="./img/gallery1.jpg" alt="")
+				.section-slider__slide 
+					a.image-popup(href="./img/gallery2.jpg")
+						img(src="./img/gallery2.jpg" alt="")
+				.section-slider__slide 
+					a.image-popup(href="./img/gallery3.jpg")
+						img(src="./img/gallery3.jpg" alt="")
+				.section-slider__slide 
+					a.image-popup(href="./img/gallery1.jpg")
+						img(src="./img/gallery1.jpg" alt="")
+				.section-slider__slide 
+					a.image-popup(href="./img/gallery2.jpg")
+						img(src="./img/gallery2.jpg" alt="")
+				.section-slider__slide 
+					a.image-popup(href="./img/gallery3.jpg")
+						img(src="./img/gallery3.jpg" alt="")
+	.section-actions 
+		.container
+			.section-actions__inner
+				.h2 Акции
+				.section-slider-two
+					.section-slider__slide 
+						a(href="")
+							img(src="./img/action1.jpg" alt="")
+					.section-slider__slide 
+						a(href="")
+							img(src="./img/action2.jpg" alt="")
+					.section-slider__slide 
+						a(href="")
+							img(src="./img/action1.jpg" alt="")
+					.section-slider__slide 
+						a(href="")
+							img(src="./img/action2.jpg" alt="")
+				a.button.button_white.section-actions__button(href="") Все акции
+	.section-news 
+		.container 
+			.section-actions__inner
+				.h2 Новости
+				.section-slider.section-news__items 
+					.section-news__item 
+						a.section-news__img(href="" style="background-image:url(./img/news1.jpg)")
+						.section-news__desc
+							a.section-news__title(href="") Юрино
+							.section-news__text Откройте для себя направление Юрино и его жемчужину – замок Шереметева.
+							.section-news__date 08.07.2022
+					.section-news__item 
+						a.section-news__img(href="" style="background-image:url(./img/news2.jpg)")
+						.section-news__desc
+							a.section-news__title(href="") Юрино
+							.section-news__text Откройте для себя направление Юрино и его жемчужину – замок Шереметева.
+							.section-news__date 08.07.2022
+					.section-news__item 
+						a.section-news__img(href="" style="background-image:url(./img/news3.jpg)")
+						.section-news__desc
+							a.section-news__title(href="") Юрино
+							.section-news__text Откройте для себя направление Юрино и его жемчужину – замок Шереметева.
+							.section-news__date 08.07.2022
+					.section-news__item 
+						a.section-news__img(href="" style="background-image:url(./img/news1.jpg)")
+						.section-news__desc
+							a.section-news__title(href="") Юрино
+							.section-news__text Откройте для себя направление Юрино и его жемчужину – замок Шереметева.
+							.section-news__date 08.07.2022
+					.section-news__item 
+						a.section-news__img(href="" style="background-image:url(./img/news2.jpg)")
+						.section-news__desc
+							a.section-news__title(href="") Юрино
+							.section-news__text Откройте для себя направление Юрино и его жемчужину – замок Шереметева.
+							.section-news__date 08.07.2022
+					.section-news__item 
+						a.section-news__img(href="" style="background-image:url(./img/news3.jpg)")
+						.section-news__desc
+							a.section-news__title(href="") Юрино
+							.section-news__text Откройте для себя направление Юрино и его жемчужину – замок Шереметева.
+							.section-news__date 08.07.2022
+				a.button.button_white.section-news__button(href="") Все новости
+
+

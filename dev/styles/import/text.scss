@@ -1,0 +1,58 @@
+.h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 6.4rem;
+  line-height: 100%;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 3.6rem;
+    margin-bottom: 2.6rem;
+    margin-top: 1.5rem;
+  }
+}
+.h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 2rem;
+  }
+}
+.section-text {
+  margin-bottom: 10rem;
+  font-size: 1.6rem;
+  line-height: 130%;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+  }
+  h2,
+  h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 110%;
+    margin-bottom: 3rem;
+    @media (max-width: $breakpoint-mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+  hr {
+    color: #d3d3d3;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    @media (max-width: $breakpoint-mobile) {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  p {
+    margin-bottom: 1em;
+  }
+}

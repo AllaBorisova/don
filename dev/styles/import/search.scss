@@ -1,0 +1,200 @@
+.search {
+  flex: 1;
+  @include tr;
+  position: relative;
+  height: 5rem;
+  @media (max-width: $breakpoint-tablet) {
+    margin-left: auto;
+  }
+  .search-active &,
+  .page-search & {
+    width: 100%;
+  }
+  &__icon {
+    @include flexcc;
+    @include wh(5rem);
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    z-index: 3;
+    @media (max-width: $breakpoint-tablet) {
+      left: auto;
+      right: 0rem;
+    }
+    svg {
+      @include wh(2.4rem);
+      circle,
+      path {
+        @include tr;
+      }
+    }
+    &:hover {
+      circle,
+      path {
+        stroke: $color-text-accent !important;
+      }
+    }
+    .search-active & {
+      display: none;
+    }
+  }
+  &__form {
+    width: 5rem;
+    position: relative;
+    @include tr;
+    .search-active &,
+    .page-search & {
+      width: 100%;
+    }
+    // .page-search & {
+    //   opacity: 1;
+    //   overflow: visible;
+    //   width: 100%;
+    // }
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+      opacity: 0;
+      .search-active &,
+      .page-search & {
+        opacity: 1;
+      }
+    }
+  }
+  &__button {
+    @include wh(5rem);
+    @include flexcc;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    padding: 0;
+    z-index: -1;
+    opacity: 0;
+    @media (max-width: $breakpoint-tablet) {
+      right: 0;
+    }
+    .search-active &,
+    .page-search & {
+      opacity: 1;
+      z-index: 7;
+    }
+    svg {
+      @include wh(2.4rem);
+      circle,
+      path {
+        @include tr;
+      }
+    }
+    &:hover {
+      circle,
+      path {
+        stroke: $color-text-accent !important;
+      }
+    }
+  }
+  &__input {
+    border: none;
+    border-radius: 4.6rem;
+    position: relative;
+    z-index: 6;
+    height: 5rem;
+    width: 0%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    @include tr;
+    overflow: hidden;
+    .search-active &,
+    .page-search & {
+      width: 100%;
+      padding-right: 7rem;
+      padding-left: 2rem;
+      border: 1px solid rgba(17, 17, 17, 0.5);
+    }
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+      padding-right: 6rem;
+      padding-left: 1rem;
+      .search-active &,
+      .page-search & {
+        padding-right: 6rem;
+        padding-left: 1rem;
+      }
+    }
+
+    &::placeholder {
+      color: rgba(17, 17, 17, 0.5);
+    }
+  }
+  // &__results {
+  //   position: absolute;
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 3rem;
+  //   font-weight: 400;
+  //   font-size: 1.4rem;
+  //   color: #0c0c0c;
+  //   background: #f7f7f7;
+  //   border-radius: 0 0 3.3rem 3.3rem;
+  //   z-index: 5;
+  //   width: 100%;
+  //   @include tr;
+  //   max-height: 0px;
+  //   transition: max-height 0.5s ease-out;
+  //   overflow: hidden;
+  //   box-shadow: -4px 14px 33px 0px rgba(0, 0, 0, 0.1),
+  //     -16px 57px 60px 0px rgba(0, 0, 0, 0.09),
+  //     -36px 129px 80px 0px rgba(0, 0, 0, 0.05),
+  //     -64px 229px 95px 0px rgba(0, 0, 0, 0.01),
+  //     -100px 359px 104px 0px rgba(0, 0, 0, 0);
+  //   .show-results & {
+  //     max-height: 400px;
+  //     padding: 0 3rem 3rem 3rem;
+  //     transition: max-height 0.5s ease-in;
+  //   }
+  //   &:before {
+  //     content: '';
+  //     width: 100%;
+  //     border-top: 1px solid rgba(12, 12, 12, 0.1);
+  //   }
+  //   a {
+  //     @include hover;
+  //   }
+  // }
+}
+.page-search {
+  margin-bottom: 10rem;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+  }
+  &__block {
+    margin-bottom: 2rem;
+  }
+  &__counts {
+    margin-bottom: 4rem;
+    @media (max-width: $breakpoint-tablet) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__result-block {
+    &:not(:last-child) {
+      margin-bottom: 10rem;
+      @media (max-width: $breakpoint-tablet) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .section-news__items {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    @media (max-width: $breakpoint-tablet) {
+      gap: 2rem;
+    }
+  }
+  .section-news__text {
+    max-width: 90rem;
+    margin-bottom: 0;
+  }
+}

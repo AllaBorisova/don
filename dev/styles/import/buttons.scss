@@ -1,0 +1,131 @@
+.button {
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 0rem 3rem;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  color: $color-text-light;
+  font-family: $font;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: normal;
+  @include tr;
+  background-color: $color-primary;
+  border-radius: 3.5rem;
+  gap: 2rem;
+  background: $color-primary;
+  box-shadow: 0 4px 10px 0 rgba(241, 93, 34, 0.1),
+    0 18px 18px 0 rgba(241, 93, 34, 0.09), 0 40px 24px 0 rgba(241, 93, 34, 0.05),
+    0 71px 28px 0 rgba(241, 93, 34, 0.01), 0 111px 31px 0 rgba(241, 93, 34, 0);
+  @media (max-width: $breakpoint-mobile) {
+    height: 7rem;
+    width: 100%;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  &:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1),
+      0 18px 18px 0 rgba(0, 0, 0, 0.09), 0 40px 24px 0 rgba(0, 0, 0, 0.05),
+      0 71px 28px 0 rgba(0, 0, 0, 0.01), 0 111px 31px 0 rgba(0, 0, 0, 0);
+    background-color: #ff7741;
+  }
+  &:active {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1),
+      0 18px 18px 0 rgba(0, 0, 0, 0.09), 0 40px 24px 0 rgba(0, 0, 0, 0.05),
+      0 71px 28px 0 rgba(0, 0, 0, 0.01), 0 111px 31px 0 rgba(0, 0, 0, 0);
+    background-color: #dd4e15;
+  }
+  &-ticket {
+    padding-left: 7.8rem;
+    background-image: url(../img/ticket.svg);
+    background-repeat: no-repeat;
+    background-position: 3rem center;
+    background-size: 2.8rem;
+    &_mini {
+      padding: 0rem 2rem;
+      height: 5rem;
+      gap: 1rem;
+      background-position: 2rem center;
+      border-radius: 2.5rem;
+      padding-left: 5.4rem;
+      background-size: 2.4rem;
+      font-size: 1.6rem;
+    }
+  }
+  &-route {
+    padding-left: 7.2rem;
+    background-image: url(../img/Routing.svg);
+    background-repeat: no-repeat;
+    background-position: 3rem center;
+    background-size: 2.4rem;
+  }
+
+  &_white {
+    width: 100%;
+    max-width: 34.4rem;
+    border: 1px solid #e95522;
+    border-radius: 3.5rem;
+    background: #fff;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f15d22;
+    box-shadow: none;
+    @media (max-width: $breakpoint-mobile) {
+      // height: 4.3rem;
+      // width: 100%;
+      // max-width: 100%;
+    }
+    &:hover {
+      border-color: #e95522;
+      background: #e95522;
+      color: #fff;
+    }
+    &:active {
+      border-color: #dd4e15;
+      background: #dd4e15;
+      color: #fff;
+    }
+  }
+
+  &_show-more {
+    height: 5.8rem;
+    font-size: 1.4rem;
+    width: 100%;
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    background: #fff;
+    color: #000;
+  }
+  &_full {
+    width: 100%;
+    max-width: 100%;
+  }
+  &_mini {
+    height: 5rem;
+    font-size: 1.6rem;
+  }
+}
+.squade-arrow {
+  width: 3rem;
+  height: 3rem;
+  @include flexcc;
+  svg {
+    path {
+      @include tr;
+      @media (max-width: $breakpoint-mobile) {
+        fill: #e95522;
+      }
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #e95522;
+      }
+    }
+  }
+}
