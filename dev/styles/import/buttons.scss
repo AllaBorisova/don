@@ -18,14 +18,13 @@
   border-radius: 3.5rem;
   gap: 2rem;
   background: $color-primary;
-  box-shadow: 0 4px 10px 0 rgba(241, 93, 34, 0.1),
-    0 18px 18px 0 rgba(241, 93, 34, 0.09), 0 40px 24px 0 rgba(241, 93, 34, 0.05),
-    0 71px 28px 0 rgba(241, 93, 34, 0.01), 0 111px 31px 0 rgba(241, 93, 34, 0);
+
   @media (max-width: $breakpoint-mobile) {
-    height: 7rem;
+    // height: 5rem;
     width: 100%;
     padding: 1.5rem;
     width: 100%;
+    gap: 1rem;
   }
   &:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1),
@@ -40,11 +39,16 @@
     background-color: #dd4e15;
   }
   &-ticket {
-    padding-left: 7.8rem;
-    background-image: url(../img/ticket.svg);
-    background-repeat: no-repeat;
-    background-position: 3rem center;
-    background-size: 2.8rem;
+    // padding-left: 7.8rem;
+    // background-image: url(../img/ticket.svg);
+    // background-repeat: no-repeat;
+    // background-position: 3rem center;
+    // background-size: 2.8rem;
+    &:before {
+      content: url(../img/ticket.svg);
+      width: 2.8rem;
+      height: 2.8rem;
+    }
     &_mini {
       padding: 0rem 2rem;
       height: 5rem;
@@ -57,11 +61,16 @@
     }
   }
   &-route {
-    padding-left: 7.2rem;
-    background-image: url(../img/Routing.svg);
-    background-repeat: no-repeat;
-    background-position: 3rem center;
-    background-size: 2.4rem;
+    // padding-left: 7.2rem;
+    // background-image: url(../img/Routing.svg);
+    // background-repeat: no-repeat;
+    // background-position: 3rem center;
+    // background-size: 2.4rem;
+    &:before {
+      content: url(../img/Routing.svg);
+      width: 2.4rem;
+      height: 2.4rem;
+    }
   }
 
   &_white {
@@ -108,8 +117,16 @@
     height: 5rem;
     font-size: 1.6rem;
   }
+  &_404 {
+    width: 100%;
+    max-width: 34.3rem;
+  }
 }
 .squade-arrow {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
   width: 3rem;
   height: 3rem;
   @include flexcc;

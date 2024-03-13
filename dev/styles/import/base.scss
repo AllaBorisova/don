@@ -141,7 +141,7 @@ textarea {
   //   // }
   // }
   &-top {
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
     position: relative;
     @media (max-width: $breakpoint-mobile) {
       margin-bottom: 6rem;
@@ -160,6 +160,13 @@ textarea {
         height: 40rem;
         position: relative;
         margin-bottom: 3rem;
+        &_action {
+          aspect-ratio: 227 / 100;
+          height: auto;
+          @media (max-width: $breakpoint-mobile) {
+            aspect-ratio: 343 / 226;
+          }
+        }
       }
       img {
         width: 100%;
@@ -233,7 +240,7 @@ textarea {
       line-height: 120%;
       max-width: 29rem;
       color: #fff;
-      margin-bottom: 2rem;
+      margin-bottom: 1.6rem;
       @media (max-width: $breakpoint-mobile) {
         color: $color-text-dark;
       }
@@ -481,6 +488,14 @@ textarea {
   font-weight: 300;
   font-size: 3.2rem;
   z-index: 5;
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+    bottom: auto;
+    top: 41.5rem;
+    left: auto;
+    right: auto;
+    color: $color-text-dark;
+  }
 }
 .slick-slides-count__first {
   color: $color-text-accent;
@@ -585,11 +600,12 @@ button.mfp-close,
   font-size: 0;
   @include flexcc;
   opacity: 1;
-  top: -8rem;
+  top: 1rem;
+  right: -3rem;
   padding-right: 0;
 }
 .mfp-close:active {
-  top: -7.9rem;
+  top: 1.5rem;
 }
 .mfp-close-btn-in .mfp-close {
   color: #fff;

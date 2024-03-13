@@ -65,17 +65,20 @@
 }
 
 .news-detail {
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: -3rem;
+  }
   &__about {
     margin-bottom: 10rem;
     columns: 2;
     font-size: 1.6rem;
     line-height: 140%;
     @media (max-width: $breakpoint-mobile) {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
       columns: 1;
       font-size: 1.4rem;
     }
-    p {
+    p:not(:last-child) {
       margin-bottom: 4rem;
       @media (max-width: $breakpoint-mobile) {
         margin-bottom: 3rem;

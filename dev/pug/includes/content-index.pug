@@ -60,14 +60,14 @@ main.main
 					button.button.button-ticket(href="") Купить билет
 	.section-routes 
 		.container 
-			.section-routes__top.section-routes-top(style="background-image:url(./img/routes-top.jpg)")
+			a.section-routes__top.section-routes-top(style="background-image:url(./img/routes-top.jpg)" href="")
 				.section-routes-top__title Маршруты
 				.section-routes-top__desc
 					.section-routes-top__left
 						.section-routes-top__count 13
 						.section-routes-top__text Маршрутов
 					.section-routes-top__right
-						a.button.button-route(href="") Посмотреть на карте
+						button.button.button-route Посмотреть на карте
 			.section-routes__items 
 				+card-routes('routes1.jpg', 'Дмитровка', 'Прогулочный маршрут по реке')
 				+card-routes('routes2.jpg', 'Балахна', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
@@ -75,18 +75,18 @@ main.main
 				+card-routes('routes4.jpg', 'Юрино', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')
 				+card-routes('routes5.jpg', 'Дмитровка', 'Откройте для себя направление Юрино и его жемчужину – замок Шереметева.')
 				+card-routes('routes6.jpg', 'Балахна', 'Откройте для себя направление Юрино и его жемчужину – замок Шереметева.')
-			a.button.button_full.section-routes__show-all(href="") Все  маршруты
+			a.button.button_full.section-routes__show-all(href="") Все наши маршруты
 	
 	.section-routes 
 		.container 
-			.section-routes__top.section-routes-top(style="background-image:url(./img/fleet-top.jpg)")
+			a.section-routes__top.section-routes-top(style="background-image:url(./img/fleet-top.jpg)" href="")
 				.section-routes-top__title Флот
 				.section-routes-top__desc
 					.section-routes-top__left
 						.section-routes-top__count 15
 						.section-routes-top__text Судов
 					.section-routes-top__right
-						a.button.button-ticket(href="") Купить билет
+						button.button.button-ticket Купить билет
 			.section-routes__items 
 				+card-fleet('fleet1.jpg', 'Валдай 45-17', 'Речное пассажирское СПК')
 				+card-fleet('fleet2.jpg', 'Валдай 45-18', 'Классический четырехпалубный теплоход-пансионат, проект 302-МК')

@@ -6,6 +6,11 @@
   line-height: 100%;
   margin-bottom: 4rem;
   margin-top: 3rem;
+  &_small {
+    font-size: 4rem;
+    line-height: 110%;
+    font-weight: 600;
+  }
   @media (max-width: $breakpoint-mobile) {
     font-size: 3.6rem;
     margin-bottom: 2.6rem;
@@ -38,6 +43,7 @@
     font-weight: 500;
     font-size: 2rem;
     line-height: 110%;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     @media (max-width: $breakpoint-mobile) {
       margin-bottom: 2rem;
@@ -54,5 +60,66 @@
   }
   p {
     margin-bottom: 1em;
+  }
+}
+
+.page-404 {
+  padding-top: 6rem;
+  margin-bottom: 9rem;
+  text-align: center;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+  }
+  &__img {
+    margin-bottom: 4.5rem;
+    position: relative;
+    img {
+      position: relative;
+      z-index: 2;
+    }
+    &:before {
+      content: '';
+      display: block;
+      height: 3.3rem;
+      width: 47.7rem;
+      background: url(../img/404-waves.svg) center no-repeat;
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      margin-left: -70rem;
+      z-index: 1;
+      @media (max-width: $breakpoint-mobile) {
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: 3.3rem;
+      width: 40rem;
+      background: url(../img/404-waves-right.svg) center no-repeat;
+      position: absolute;
+      bottom: 3rem;
+      right: 50%;
+      margin-right: -68rem;
+      z-index: 1;
+      @media (max-width: $breakpoint-mobile) {
+        display: none;
+      }
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 4.5rem;
+    max-width: 59rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.4rem;
+    }
   }
 }

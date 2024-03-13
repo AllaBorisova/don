@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   @media (max-width: $breakpoint-mobile) {
     margin-bottom: 6rem;
   }
@@ -7,13 +7,14 @@
     display: grid;
     gap: 12.4rem;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 6rem;
+    margin-bottom: 9rem;
     @media (max-width: $breakpoint-mobile) {
       display: flex;
       gap: 2.8rem;
       overflow-x: scroll;
       -ms-overflow-style: none;
       scrollbar-width: none;
+      margin-bottom: 6rem;
     }
   }
   &__item {
