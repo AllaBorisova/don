@@ -78,7 +78,11 @@
   // }
 }
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 999;
   padding-top: 3rem;
   padding-bottom: 2.5rem;
   @media (max-width: $breakpoint-tablet) {

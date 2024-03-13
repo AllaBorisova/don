@@ -1,4 +1,4 @@
-// Fancybox.bind('[data-fancybox]', {});
+Fancybox.bind('[data-fancybox]', {});
 
 jQuery(document).ready(function ($) {
   //tabs
@@ -34,14 +34,6 @@ jQuery(document).ready(function ($) {
       enabled: true,
       duration: 300,
       easing: 'ease-in-out',
-    },
-  });
-  $('.image-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    // mainClass: 'mfp-img-mobile',
-    image: {
-      verticalFit: true,
     },
   });
 

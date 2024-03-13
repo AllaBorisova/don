@@ -474,7 +474,7 @@
     border-radius: 1rem;
     background: #fff;
     position: relative;
-    a.image-popup {
+    .image-popup {
       position: relative;
       display: block;
       &:before {
@@ -496,7 +496,7 @@
     }
     &:hover {
       box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-      a.image-popup:before {
+      .image-popup:before {
         opacity: 1;
       }
     }
