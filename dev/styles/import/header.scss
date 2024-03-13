@@ -107,12 +107,18 @@
     line-height: 100%;
     display: block;
     @include hover;
+    .search-active & {
+      display: none;
+    }
     @media (max-width: $breakpoint-mobile) {
       display: none;
     }
   }
   &__button {
     margin-left: auto;
+    .search-active & {
+      display: none;
+    }
     @media (max-width: $breakpoint-mobile) {
       display: none;
     }

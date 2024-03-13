@@ -52,10 +52,10 @@ jQuery(document).ready(function ($) {
     }
   });
   //search results
-  // $('.header .search__input').on('keyup', function () {
-  //   $('.header .search').addClass('show-results');
-  //   // $('.search__results').toggle();
-  // });
+  $('.header .search__input').on('keyup', function () {
+    $('.header .search').addClass('show-results');
+    // $('.search__results').toggle();
+  });
 
   $('.search__icon').click(function (e) {
     $('.header').addClass('search-active');
@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
     const container = $('.search');
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $('.header').removeClass('search-active');
-      //container.removeClass('show-results');
+      container.removeClass('show-results');
     }
   });
 

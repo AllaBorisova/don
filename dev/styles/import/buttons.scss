@@ -55,6 +55,9 @@
       gap: 1rem;
       border-radius: 2.5rem;
       font-size: 1.6rem;
+      &:before {
+        transform: scale(0.85);
+      }
     }
   }
   &-route {
