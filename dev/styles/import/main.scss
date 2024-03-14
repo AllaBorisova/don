@@ -85,6 +85,10 @@
       position: static;
       padding: 0;
       gap: 3.2rem;
+      .button {
+        max-width: 99%;
+        margin-left: 0.5%;
+      }
       // width: auto;
       // background: none;
       // backdrop-filter: none;

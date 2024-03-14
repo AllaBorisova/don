@@ -120,6 +120,10 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  $(window).on('resize orientationchange', function () {
+    $el.slick('resize');
+  });
+
   $('.section-slider-two').slick({
     dots: false,
     infinite: true,
