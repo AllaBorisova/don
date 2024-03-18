@@ -56,7 +56,7 @@
       }
     }
   }
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 1280px) {
     @include flexcc;
     align-items: flex-start;
   }
@@ -69,6 +69,9 @@
   flex: none;
   img {
     display: block;
+  }
+  @media (max-width: 1280px) {
+    margin-right: 0;
   }
   @media (max-width: $breakpoint-tablet) {
     margin-right: 1.6rem;
@@ -85,6 +88,9 @@
   z-index: 999;
   padding-top: 3rem;
   padding-bottom: 2.5rem;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media (max-width: $breakpoint-tablet) {
     padding-top: 1.7rem;
     padding-bottom: 1.5rem;
@@ -106,11 +112,12 @@
     font-weight: 400;
     line-height: 100%;
     display: block;
+    white-space: nowrap;
     @include hover;
     .search-active & {
       display: none;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-tablet) {
       display: none;
     }
   }
@@ -119,13 +126,13 @@
     .search-active & {
       display: none;
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-tablet) {
       display: none;
     }
   }
   &__logo {
     display: none;
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: 1280px) {
       display: block;
       margin-bottom: 3rem;
     }
@@ -133,7 +140,7 @@
   &__contacts {
     // font-family: $font-second;
     display: none;
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: 1280px) {
       display: block;
       .header__phone {
         display: block;
@@ -154,13 +161,13 @@
   // }
 }
 .nav {
-  @media (max-width: $breakpoint-tablet) {
+  @media (max-width: 1280px) {
     left: -200vw;
     @include tr-slow;
     position: absolute;
-    top: -1.6rem;
+    top: -3rem;
     background: #f7f7f7;
-    width: calc(100% + 3.2rem);
+    width: calc(100% + 8rem);
     z-index: 998;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -172,8 +179,16 @@
       -41px 271px 109px 0 rgba(0, 0, 0, 0.01),
       -65px 423px 120px 0 rgba(0, 0, 0, 0);
     background: #111;
+    @media (max-width: $breakpoint-tablet) {
+      width: calc(100% + 3.2rem);
+      top: -1.6rem;
+    }
     .open-menu & {
-      left: -1.6rem;
+      left: -4rem;
+
+      @media (max-width: $breakpoint-tablet) {
+        left: -1.6rem;
+      }
     }
   }
 
@@ -186,7 +201,7 @@
     line-height: 120%;
     color: $color-text-dark;
     // .open-menu & {
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: 1280px) {
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 3rem;
@@ -197,7 +212,8 @@
   }
   &__link {
     @include hover;
-    @media (max-width: $breakpoint-tablet) {
+    white-space: nowrap;
+    @media (max-width: 1280px) {
       color: $color-text-light;
     }
   }

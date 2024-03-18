@@ -7,9 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./libs/css/magnific-popup.css">
-    <link rel="stylesheet" href="./libs/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.0.7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/all.css">
   </head>
   <body>
@@ -45,8 +44,7 @@
                   <div class="search__result"> <a href="">Валдай 45Р-17</a></div>
                 </div>
               </form>
-            </div>
-            <button class="header__button button button-ticket button-ticket_mini">Купить билет</button><a class="header__phone" href="tel:+7 473 456-34-54">+7 473 456-34-54</a>
+            </div><a class="header__button button button-ticket button-ticket_mini" href="">Купить билет</a><a class="header__phone" href="tel:+7 473 456-34-54">+7 473 456-34-54</a>
             <button class="hamburger" type="button"><span></span><span></span><span></span></button>
           </div>
         </div>
@@ -105,7 +103,7 @@
                     <input class="custom-checkbox__checkbox" type="checkbox" name=""/><span class="custom-checkbox__span"></span><span class="custom-checkbox__label">Я прочитал и принимаю условия <a href="">Политики конфиденциальности</a> и <a href="">Правил обработки персональных данных</a></span>
                   </label>
                 </div>
-                <button class="button button_mini form__submit open-popup-link" type="submit" data-mfp-src="#thanks-popup">Отправить</button>
+                <button class="button button_mini form__submit" type="submit" data-fancybox data-src="#thanks-popup">Отправить</button>
               </form>
             </div>
           </div>
@@ -140,17 +138,14 @@
           <div class="footer__copyright">© 2024 АО “СПК Дон”</div>
         </div>
       </footer>
-      <div class="white-popup mfp-hide" id="thanks-popup">
+      <div class="white-popup" id="thanks-popup">
         <div class="popup"> 
           <div class="popup__text">Спасибо!<br>Наш специалист свяжется с Вами в ближайшее время.</div>
         </div>
       </div>
     </div>
-    <script src="./libs/js/jquery.min.js"></script>
-    <script src="./libs/js/jquery.maskedinput.js"></script>
-    <script src="./libs/slick/slick.js"></script>
-    <script src="./libs/js/jquery.magnific-popup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper@11.0.7/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

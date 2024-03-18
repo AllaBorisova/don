@@ -118,6 +118,9 @@ textarea {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .m-l-auto {
   margin-left: auto;
@@ -395,26 +398,9 @@ textarea {
 //     margin: 0;
 //   }
 // }
-.slick-dots {
-  @include ul-clean;
-  @include flexcc;
-  gap: 2rem;
-  position: absolute;
-  bottom: 4.9rem;
-  gap: 2rem;
-  right: 9.3rem;
-  align-items: flex-end;
-}
-.slick-dots button {
-  opacity: 1;
-  @include tr;
-  // \
-  padding: 0;
-}
-.slick-dots .slick-active button {
-}
-.slick-prev,
-.slick-next {
+//
+.swiper-button-next,
+.swiper-button-prev {
   @include wh(6rem);
   position: absolute;
   top: 50%;
@@ -434,23 +420,59 @@ textarea {
       @include wh(3.2rem);
     }
   }
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
 }
-.slick-prev {
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  @include wh(2.4rem);
+}
+.swiper-button-prev {
   left: -3rem;
 }
-.slick-next {
+.swiper-button-next {
   right: -3rem;
 }
+// .slick-prev,
+// .slick-next {
+//   @include wh(6rem);
+//   position: absolute;
+//   top: 50%;
+//   margin-top: -3rem;
+//   font-size: 0;
+//   z-index: 5;
+//   // opacity: 0.5;
+//   @include tr;
+//   border-radius: 50%;
+//   background: #fff;
+//   svg {
+//     @include tr-fast;
+//   }
+//   &:hover {
+//     // background-color: #ffa200;
+//     svg {
+//       @include wh(3.2rem);
+//     }
+//   }
+// }
+// .slick-prev {
+//   left: -3rem;
+// }
+// .slick-next {
+//   right: -3rem;
+// }
 
-.slick-prev-main {
+.main-slider__prev {
   @include flexcc;
+  cursor: pointer;
   @include wh(3.2rem);
   position: absolute;
   background: none;
   bottom: 4rem;
   right: 20rem;
   z-index: 5;
-  display: block;
+
   padding: 0;
   svg {
     display: block;
@@ -459,19 +481,20 @@ textarea {
   &:hover {
     // background-color: #ffa200;
     svg {
-      @include wh(3.2rem);
+      @include wh(3.6rem);
     }
   }
 }
-.slick-next-main {
+.main-slider__next {
   @include flexcc;
+  cursor: pointer;
   @include wh(3.2rem);
   position: absolute;
   background: none;
   bottom: 4rem;
   right: 4rem;
   z-index: 5;
-  display: block;
+
   padding: 0;
   svg {
     display: block;
@@ -484,7 +507,7 @@ textarea {
     }
   }
 }
-.slick-slides-count {
+.main-slider__pagination {
   position: absolute;
   @include flexcc;
   gap: 2rem;
@@ -496,6 +519,12 @@ textarea {
   font-weight: 300;
   font-size: 3.2rem;
   z-index: 5;
+  top: auto;
+  left: auto;
+  width: auto;
+  .swiper-pagination-current {
+    color: $color-text-accent;
+  }
   @media (max-width: $breakpoint-mobile) {
     width: 100%;
     bottom: auto;
@@ -505,74 +534,7 @@ textarea {
     color: $color-text-dark;
   }
 }
-.slick-slides-count__first {
-  color: $color-text-accent;
-}
 
-// .pagination {
-//   margin-top: 5rem;
-//   display: grid;
-//   grid-template-columns: 1fr 3fr;
-//   gap: 3.4rem;
-//   @media (max-width: $breakpoint-mobile) {
-//     grid-template-columns: 1fr;
-//     margin-top: 1.6rem;
-//   }
-//   &_fifty {
-//     // grid-template-columns: 2fr 2fr;
-//   }
-//   &_thirty {
-//     grid-template-columns: 1fr 2fr;
-//     gap: 3rem;
-//     margin-top: 3rem;
-//     @media (max-width: $breakpoint-mobile) {
-//       grid-template-columns: 1fr;
-//     }
-//   }
-//   &__pages {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     @media (max-width: $breakpoint-mobile) {
-//       display: none;
-//     }
-//   }
-//   &__left,
-//   &__right {
-//     @include wh(6rem);
-//     @include flexcc;
-//     @include tr;
-//     border-radius: 50%;
-//     svg {
-//       circle,
-//       path {
-//         @include tr;
-//       }
-//     }
-//     &:hover {
-//       background: $color-text-accent;
-//       svg {
-//         circle,
-//         path {
-//           stroke: #fff;
-//         }
-//       }
-//     }
-//   }
-
-//   &__text {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     font-size: 3.2rem;
-//     font-family: $font;
-//     font-weight: 400;
-//     gap: 2rem;
-//   }
-//   &__active-page {
-//     color: #ffa200;
-//   }
-// }
 .white-popup {
   position: relative;
   background: #fff;
@@ -581,26 +543,18 @@ textarea {
   width: auto;
   max-width: 50rem;
   margin: 4rem auto;
+  display: none;
   @media (max-width: $breakpoint-mobile) {
     padding: 2.4rem 3.3rem;
   }
 }
 
 .popup {
-  // &__title {
-  //   font-weight: 400;
-  //   font-size: 2rem;
-  //   text-transform: uppercase;
-  //   font-family: $font;
-  //   margin-bottom: 1.5rem;
-  // }
   &__text {
     font-size: 2rem;
   }
 }
-button.mfp-close,
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
+.fancybox__content > .f-button.is-close-btn {
   @include wh(6rem);
   border-radius: 50%;
   background: url(../img/close.svg) center no-repeat $color-primary;
@@ -608,31 +562,37 @@ button.mfp-close,
   font-size: 0;
   @include flexcc;
   opacity: 1;
-  top: 1rem;
+  top: -3rem;
   right: -3rem;
   padding-right: 0;
 }
-.mfp-close:active {
-  top: 1.5rem;
+.is-compact .fancybox__content > .f-button.is-close-btn {
+  @include wh(3rem);
+  background-size: 1rem;
+  top: -1.5rem;
+  right: -1.5rem;
 }
-.mfp-close-btn-in .mfp-close {
-  color: #fff;
-}
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  @include tr;
-}
+// .mfp-close:active {
+//   top: 1.5rem;
+// }
+// .mfp-close-btn-in .mfp-close {
+//   color: #fff;
+// }
+// .mfp-with-zoom .mfp-container,
+// .mfp-with-zoom.mfp-bg {
+//   opacity: 0;
+//   -webkit-backface-visibility: hidden;
+//   @include tr;
+// }
 
-.mfp-with-zoom.mfp-ready .mfp-container {
-  opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
+// .mfp-with-zoom.mfp-ready .mfp-container {
+//   opacity: 1;
+// }
+// .mfp-with-zoom.mfp-ready.mfp-bg {
+//   opacity: 0.8;
+// }
 
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
+// .mfp-with-zoom.mfp-removing .mfp-container,
+// .mfp-with-zoom.mfp-removing.mfp-bg {
+//   opacity: 0;
+// }

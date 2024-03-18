@@ -1,9 +1,11 @@
 .search {
-  flex: 1;
+  // flex: 1;
   @include tr;
   position: relative;
   height: 5rem;
-  @media (max-width: $breakpoint-tablet) {
+  width: 5rem;
+  overflow: hidden;
+  @media (max-width: 1280px) {
     margin-left: auto;
   }
   .search-active &,
@@ -17,7 +19,7 @@
     position: absolute;
     top: 0rem;
     left: 0rem;
-    z-index: 3;
+    z-index: 7;
     @media (max-width: $breakpoint-tablet) {
       left: auto;
       right: 0rem;
@@ -40,26 +42,26 @@
     }
   }
   &__form {
-    width: 5rem;
+    // width: 5rem;
     position: relative;
     @include tr;
-    .search-active &,
-    .page-search & {
-      width: 100%;
-    }
+    // .search-active &,
+    // .page-search & {
+    //   width: 100%;
+    // }
     // .page-search & {
     //   opacity: 1;
     //   overflow: visible;
     //   width: 100%;
     // }
-    @media (max-width: $breakpoint-tablet) {
-      width: 100%;
-      opacity: 0;
-      .search-active &,
-      .page-search & {
-        opacity: 1;
-      }
-    }
+    // @media (max-width: $breakpoint-tablet) {
+    //   width: 100%;
+    //   opacity: 0;
+    //   .search-active &,
+    //   .page-search & {
+    //     opacity: 1;
+    //   }
+    // }
   }
   &__button {
     @include wh(5rem);
@@ -100,14 +102,17 @@
     position: relative;
     z-index: 6;
     height: 5rem;
-    width: 0%;
+    // width: 0%;
+    width: 100%;
     font-size: 1.6rem;
     font-weight: 400;
     @include tr;
+    opacity: 0;
     overflow: hidden;
     .search-active &,
     .page-search & {
       width: 100%;
+      opacity: 1;
       padding-right: 7rem;
       padding-left: 2rem;
       border: 1px solid rgba(17, 17, 17, 0.5);

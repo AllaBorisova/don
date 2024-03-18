@@ -134,14 +134,14 @@
     path {
       @include tr;
       @media (max-width: $breakpoint-mobile) {
-        fill: #e95522;
+        fill: $color-text-accent;
       }
     }
   }
   &:hover {
     svg {
       path {
-        fill: #e95522;
+        fill: $color-text-accent;
       }
     }
   }

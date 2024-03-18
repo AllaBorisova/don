@@ -7,9 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./libs/css/magnific-popup.css">
-    <link rel="stylesheet" href="./libs/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.0.7/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/all.css">
   </head>
   <body>
@@ -45,8 +44,7 @@
                   <div class="search__result"> <a href="">Валдай 45Р-17</a></div>
                 </div>
               </form>
-            </div>
-            <button class="header__button button button-ticket button-ticket_mini">Купить билет</button><a class="header__phone" href="tel:+7 473 456-34-54">+7 473 456-34-54</a>
+            </div><a class="header__button button button-ticket button-ticket_mini" href="">Купить билет</a><a class="header__phone" href="tel:+7 473 456-34-54">+7 473 456-34-54</a>
             <button class="hamburger" type="button"><span></span><span></span><span></span></button>
           </div>
         </div>
@@ -54,25 +52,28 @@
       <main class="main">
         <div class="section-main-slider"> 
           <div class="container"> 
-            <div class="section-main-slider__block"> 
-              <div class="section-main-slider__slide">
-                <div class="section-main-slider__inner">
-                  <div class="section-main-slider__img"><img class="show-desktop" src="./img/slide1.jpg" alt=""><img class="show-mobile" src="./img/slide1-mobile.jpg" alt=""></div>
-                  <div class="section-main-slider__info"> 
-                    <div class="section-main-slider__title">Речные пассажирские перевозки</div>
-                    <button class="button button-ticket" href="">Купить билет</button>
+            <div class="swiper section-main-slider__block main-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide section-main-slider__slide">
+                  <div class="section-main-slider__inner">
+                    <div class="section-main-slider__img"><img class="show-desktop" src="./img/slide1.jpg" alt=""><img class="show-mobile" src="./img/slide1-mobile.jpg" alt=""></div>
+                    <div class="section-main-slider__info"> 
+                      <div class="section-main-slider__title">Речные пассажирские перевозки</div><a class="button button-ticket" href="">Купить билет</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide section-main-slider__slide">
+                  <div class="section-main-slider__inner">
+                    <div class="section-main-slider__img"><img class="show-desktop" src="./img/slide2.jpg" alt=""><img class="show-mobile" src="./img/slide2.jpg" alt=""></div>
+                    <div class="section-main-slider__info"> 
+                      <div class="section-main-slider__title">Речные пассажирские перевозки</div><a class="button button-route" href="">Выбрать маршрут</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="section-main-slider__slide">
-                <div class="section-main-slider__inner">
-                  <div class="section-main-slider__img"><img class="show-desktop" src="./img/slide2.jpg" alt=""><img class="show-mobile" src="./img/slide2.jpg" alt=""></div>
-                  <div class="section-main-slider__info"> 
-                    <div class="section-main-slider__title">Речные пассажирские перевозки</div>
-                    <button class="button button-route" href="">Выбрать маршрут</button>
-                  </div>
-                </div>
-              </div>
+              <div class="main-slider__next"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z" fill="#E95522" /></svg></div>
+              <div class="main-slider__prev"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.5303 8.46967C11.2374 8.17678 10.7626 8.17678 10.4697 8.46967L7.46967 11.4697C7.17678 11.7626 7.17678 12.2374 7.46967 12.5303L10.4697 15.5303C10.7626 15.8232 11.2374 15.8232 11.5303 15.5303C11.8232 15.2374 11.8232 14.7626 11.5303 14.4697L9.81066 12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H9.81066L11.5303 9.53033C11.8232 9.23744 11.8232 8.76256 11.5303 8.46967Z" fill="#E95522" /></svg></div>
+              <div class="main-slider__pagination"></div>
             </div>
           </div>
         </div>
@@ -94,29 +95,27 @@
             <div class="section-categories__items"> 
               <div class="section-categories__item" href="" style="background-image:url(./img/category1.jpg)"> 
                 <div class="section-categories__title">Регулярные пассажирские рейсы</div>
-                <div class="section-categories__text">это рейсы по маршруту с возможностью купить билет в одну сторону</div>
-                <button class="button button-ticket" href="">Купить билет</button>
+                <div class="section-categories__text">это рейсы по маршруту с возможностью купить билет в одну сторону</div><a class="button button-ticket" href="">Купить билет</a>
               </div>
               <div class="section-categories__item" href="" style="background-image:url(./img/category2.jpg)"> 
                 <div class="section-categories__title">Экскурсионно-прогулочные рейсы</div>
-                <div class="section-categories__text">это прогулочные и круговые рейсы (с билетом туда-обратно) по туристическим направлениям с включённой в стоимость билета экскурсионной программой.</div>
-                <button class="button button-ticket" href="">Купить билет</button>
+                <div class="section-categories__text">это прогулочные и круговые рейсы (с билетом туда-обратно) по туристическим направлениям с включённой в стоимость билета экскурсионной программой.</div><a class="button button-ticket" href="">Купить билет</a>
               </div>
             </div>
           </div>
         </div>
         <div class="section-routes"> 
-          <div class="container"> <a class="section-routes__top section-routes-top" style="background-image:url(./img/routes-top.jpg)" href="">
+          <div class="container"> 
+            <div class="section-routes__top section-routes-top section-routes-top_routes">
               <div class="section-routes-top__title">Маршруты</div>
               <div class="section-routes-top__desc">
                 <div class="section-routes-top__left">
                   <div class="section-routes-top__count">13</div>
                   <div class="section-routes-top__text">Маршрутов</div>
                 </div>
-                <div class="section-routes-top__right">
-                  <button class="button button-route">Посмотреть на карте</button>
-                </div>
-              </div></a>
+                <div class="section-routes-top__right"><a class="button button-route" href="">Посмотреть на карте</a></div>
+              </div>
+            </div>
             <div class="section-routes__items"> <a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/routes1.jpg" alt=""/></div>
                 <div class="section-routes__inner">
@@ -124,7 +123,7 @@
                     <div class="section-routes__title">Дмитровка</div>
                     <div class="section-routes__text">Прогулочный маршрут по реке</div>
                     <div class="section-routes__price">Цена от 5 000 ₽</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/routes2.jpg" alt=""/></div>
@@ -133,7 +132,7 @@
                     <div class="section-routes__title">Балахна</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
                     <div class="section-routes__price">Цена от 5 000 ₽</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/routes3.jpg" alt=""/></div>
@@ -142,7 +141,7 @@
                     <div class="section-routes__title">Павлово</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
                     <div class="section-routes__price">Цена от 5 000 ₽</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/routes4.jpg" alt=""/></div>
@@ -151,7 +150,7 @@
                     <div class="section-routes__title">Юрино</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
                     <div class="section-routes__price">Цена от 5 000 ₽</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/routes5.jpg" alt=""/></div>
@@ -160,7 +159,7 @@
                     <div class="section-routes__title">Дмитровка</div>
                     <div class="section-routes__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
                     <div class="section-routes__price">Цена от 5 000 ₽</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/routes6.jpg" alt=""/></div>
@@ -169,24 +168,24 @@
                     <div class="section-routes__title">Балахна</div>
                     <div class="section-routes__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
                     <div class="section-routes__price">Цена от 5 000 ₽</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a>
             </div><a class="button button_full section-routes__show-all" href="">Все наши маршруты</a>
           </div>
         </div>
         <div class="section-routes"> 
-          <div class="container"> <a class="section-routes__top section-routes-top" style="background-image:url(./img/fleet-top.jpg)" href="">
+          <div class="container"> 
+            <div class="section-routes__top section-routes-top section-routes-top_fleet">
               <div class="section-routes-top__title">Флот</div>
               <div class="section-routes-top__desc">
                 <div class="section-routes-top__left">
                   <div class="section-routes-top__count">15</div>
                   <div class="section-routes-top__text">Судов</div>
                 </div>
-                <div class="section-routes-top__right">
-                  <button class="button button-ticket">Купить билет</button>
-                </div>
-              </div></a>
+                <div class="section-routes-top__right"><a class="button button-ticket" href="">Купить билет</a></div>
+              </div>
+            </div>
             <div class="section-routes__items"> <a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/fleet1.jpg" alt=""/></div>
                 <div class="section-routes__inner">
@@ -194,7 +193,7 @@
                   <div class="section-routes__desc"> 
                     <div class="section-routes__title">Валдай 45-17</div>
                     <div class="section-routes__text">Речное пассажирское СПК</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/fleet2.jpg" alt=""/></div>
@@ -203,7 +202,7 @@
                   <div class="section-routes__desc"> 
                     <div class="section-routes__title">Валдай 45-18</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/fleet3.jpg" alt=""/></div>
@@ -212,7 +211,7 @@
                   <div class="section-routes__desc"> 
                     <div class="section-routes__title">Валдай 45-17</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/fleet4.jpg" alt=""/></div>
@@ -221,7 +220,7 @@
                   <div class="section-routes__desc"> 
                     <div class="section-routes__title">Валдай 45-18</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/fleet5.jpg" alt=""/></div>
@@ -230,7 +229,7 @@
                   <div class="section-routes__desc"> 
                     <div class="section-routes__title">Валдай 45-17</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a><a class="section-routes__item" href="">
                 <div class="section-routes__img"> <img src="./img/fleet6.jpg" alt=""/></div>
@@ -239,22 +238,28 @@
                   <div class="section-routes__desc"> 
                     <div class="section-routes__title">Валдай 45-18</div>
                     <div class="section-routes__text">Классический четырехпалубный теплоход-пансионат, проект 302-МК</div>
-                    <button class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></button>
+                    <div class="squade-arrow"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6694 23.6694C25.5 21.8388 25.5 18.8926 25.5 13C25.5 7.10744 25.5 4.16116 23.6694 2.33058C21.8388 0.5 18.8926 0.5 13 0.5C7.10744 0.5 4.16116 0.5 2.33058 2.33058C0.5 4.16116 0.5 7.10744 0.5 13C0.5 18.8926 0.5 21.8388 2.33058 23.6694C4.16116 25.5 7.10744 25.5 13 25.5C18.8926 25.5 21.8388 25.5 23.6694 23.6694ZM16.5355 8.52697C17.0533 8.52697 17.473 8.9467 17.473 9.46447L17.473 14.7678C17.473 15.2855 17.0533 15.7053 16.5355 15.7053C16.0178 15.7053 15.598 15.2855 15.598 14.7678L15.598 11.7278L10.1274 17.1984C9.76126 17.5646 9.16767 17.5646 8.80155 17.1984C8.43544 16.8323 8.43544 16.2387 8.80155 15.8726L14.2722 10.402H11.2322C10.7145 10.402 10.2947 9.98223 10.2947 9.46447C10.2947 8.9467 10.7145 8.52697 11.2322 8.52697L16.5355 8.52697Z" fill="#FFF1EA"/></svg></div>
                   </div>
                 </div></a>
             </div><a class="button button_full section-routes__show-all" href="">Все наши суда</a>
           </div>
         </div>
-        <div class="section-gallery">
+        <div class="section-gallery section-gallery_mt">
           <div class="container">
             <div class="h2">Фотогалерея</div>
-            <div class="section-slider">
-              <div class="section-slider__slide"><a class="image-popup" href="./img/gallery1.jpg" data-fancybox="gallery"><img src="./img/gallery1.jpg" alt=""></a></div>
-              <div class="section-slider__slide"> <a class="image-popup" href="./img/gallery2.jpg" data-fancybox="gallery"><img src="./img/gallery2.jpg" alt=""></a></div>
-              <div class="section-slider__slide"> <a class="image-popup" href="./img/gallery3.jpg" data-fancybox="gallery"><img src="./img/gallery3.jpg" alt=""></a></div>
-              <div class="section-slider__slide"> <a class="image-popup" href="./img/gallery1.jpg" data-fancybox="gallery"><img src="./img/gallery1.jpg" alt=""></a></div>
-              <div class="section-slider__slide"> <a class="image-popup" href="./img/gallery2.jpg" data-fancybox="gallery"><img src="./img/gallery2.jpg" alt=""></a></div>
-              <div class="section-slider__slide"> <a class="image-popup" href="./img/gallery3.jpg" data-fancybox="gallery"><img src="./img/gallery3.jpg" alt=""></a></div>
+            <div class="swiper-inner">
+              <div class="swiper section-slider section-slider-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide section-slider__slide"><a class="image-popup" href="./img/gallery1.jpg" data-fancybox="gallery"><img src="./img/gallery1.jpg" alt=""></a></div>
+                  <div class="swiper-slide section-slider__slide"> <a class="image-popup" href="./img/gallery2.jpg" data-fancybox="gallery"><img src="./img/gallery2.jpg" alt=""></a></div>
+                  <div class="swiper-slide section-slider__slide"> <a class="image-popup" href="./img/gallery3.jpg" data-fancybox="gallery"><img src="./img/gallery3.jpg" alt=""></a></div>
+                  <div class="swiper-slide section-slider__slide"> <a class="image-popup" href="./img/gallery1.jpg" data-fancybox="gallery"><img src="./img/gallery1.jpg" alt=""></a></div>
+                  <div class="swiper-slide section-slider__slide"> <a class="image-popup" href="./img/gallery2.jpg" data-fancybox="gallery"><img src="./img/gallery2.jpg" alt=""></a></div>
+                  <div class="swiper-slide section-slider__slide"> <a class="image-popup" href="./img/gallery3.jpg" data-fancybox="gallery"><img src="./img/gallery3.jpg" alt=""></a></div>
+                </div>
+              </div>
+              <div class="swiper-button-next section-slider-gallery__next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z" fill="#E95522" /></svg></div>
+              <div class="swiper-button-prev section-slider-gallery__prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.5303 8.46967C11.2374 8.17678 10.7626 8.17678 10.4697 8.46967L7.46967 11.4697C7.17678 11.7626 7.17678 12.2374 7.46967 12.5303L10.4697 15.5303C10.7626 15.8232 11.2374 15.8232 11.5303 15.5303C11.8232 15.2374 11.8232 14.7626 11.5303 14.4697L9.81066 12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H9.81066L11.5303 9.53033C11.8232 9.23744 11.8232 8.76256 11.5303 8.46967Z" fill="#E95522" /></svg></div>
             </div>
           </div>
         </div>
@@ -262,11 +267,17 @@
           <div class="container">
             <div class="section-actions__inner">
               <div class="h2">Акции</div>
-              <div class="section-slider-two">
-                <div class="section-slider__slide"> <a href=""><img src="./img/action1.jpg" alt=""></a></div>
-                <div class="section-slider__slide"> <a href=""><img src="./img/action2.jpg" alt=""></a></div>
-                <div class="section-slider__slide"> <a href=""><img src="./img/action1.jpg" alt=""></a></div>
-                <div class="section-slider__slide"> <a href=""><img src="./img/action2.jpg" alt=""></a></div>
+              <div class="swiper-inner">
+                <div class="swiper section-slider-two section-slider-actions">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide section-slider-two__slide"> <a href=""><img src="./img/action1.jpg" alt=""></a></div>
+                    <div class="swiper-slide section-slider-two__slide"> <a href=""><img src="./img/action2.jpg" alt=""></a></div>
+                    <div class="swiper-slide section-slider-two__slide"> <a href=""><img src="./img/action1.jpg" alt=""></a></div>
+                    <div class="swiper-slide section-slider-two__slide"> <a href=""><img src="./img/action2.jpg" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next section-slider-actions__next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z" fill="#E95522" /></svg></div>
+                <div class="swiper-button-prev section-slider-actions__prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.5303 8.46967C11.2374 8.17678 10.7626 8.17678 10.4697 8.46967L7.46967 11.4697C7.17678 11.7626 7.17678 12.2374 7.46967 12.5303L10.4697 15.5303C10.7626 15.8232 11.2374 15.8232 11.5303 15.5303C11.8232 15.2374 11.8232 14.7626 11.5303 14.4697L9.81066 12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H9.81066L11.5303 9.53033C11.8232 9.23744 11.8232 8.76256 11.5303 8.46967Z" fill="#E95522" /></svg></div>
               </div><a class="button button_white section-actions__button" href="">Все акции</a>
             </div>
           </div>
@@ -275,43 +286,49 @@
           <div class="container"> 
             <div class="section-actions__inner">
               <div class="h2">Новости</div>
-              <div class="section-slider section-news__items"> 
-                <div class="section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news1.jpg)"></a>
-                  <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
-                    <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
-                    <div class="section-news__date">08.07.2022</div>
+              <div class="swiper-inner">
+                <div class="swiper section-slider section-news__items section-slider-news">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news1.jpg)"></a>
+                      <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
+                        <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
+                        <div class="section-news__date">08.07.2022</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news2.jpg)"></a>
+                      <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
+                        <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
+                        <div class="section-news__date">08.07.2022</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news3.jpg)"></a>
+                      <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
+                        <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
+                        <div class="section-news__date">08.07.2022</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news1.jpg)"></a>
+                      <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
+                        <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
+                        <div class="section-news__date">08.07.2022</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news2.jpg)"></a>
+                      <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
+                        <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
+                        <div class="section-news__date">08.07.2022</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news3.jpg)"></a>
+                      <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
+                        <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
+                        <div class="section-news__date">08.07.2022</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news2.jpg)"></a>
-                  <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
-                    <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
-                    <div class="section-news__date">08.07.2022</div>
-                  </div>
-                </div>
-                <div class="section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news3.jpg)"></a>
-                  <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
-                    <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
-                    <div class="section-news__date">08.07.2022</div>
-                  </div>
-                </div>
-                <div class="section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news1.jpg)"></a>
-                  <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
-                    <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
-                    <div class="section-news__date">08.07.2022</div>
-                  </div>
-                </div>
-                <div class="section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news2.jpg)"></a>
-                  <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
-                    <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
-                    <div class="section-news__date">08.07.2022</div>
-                  </div>
-                </div>
-                <div class="section-news__item"> <a class="section-news__img" href="" style="background-image:url(./img/news3.jpg)"></a>
-                  <div class="section-news__desc"><a class="section-news__title" href="">Юрино</a>
-                    <div class="section-news__text">Откройте для себя направление Юрино и его жемчужину – замок Шереметева.</div>
-                    <div class="section-news__date">08.07.2022</div>
-                  </div>
-                </div>
+                <div class="swiper-button-next section-slider-news__next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z" fill="#E95522" /></svg></div>
+                <div class="swiper-button-prev section-slider-news__prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.5303 8.46967C11.2374 8.17678 10.7626 8.17678 10.4697 8.46967L7.46967 11.4697C7.17678 11.7626 7.17678 12.2374 7.46967 12.5303L10.4697 15.5303C10.7626 15.8232 11.2374 15.8232 11.5303 15.5303C11.8232 15.2374 11.8232 14.7626 11.5303 14.4697L9.81066 12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H9.81066L11.5303 9.53033C11.8232 9.23744 11.8232 8.76256 11.5303 8.46967Z" fill="#E95522" /></svg></div>
               </div><a class="button button_white section-news__button" href="">Все новости</a>
             </div>
           </div>
@@ -346,17 +363,14 @@
           <div class="footer__copyright">© 2024 АО “СПК Дон”</div>
         </div>
       </footer>
-      <div class="white-popup mfp-hide" id="thanks-popup">
+      <div class="white-popup" id="thanks-popup">
         <div class="popup"> 
           <div class="popup__text">Спасибо!<br>Наш специалист свяжется с Вами в ближайшее время.</div>
         </div>
       </div>
     </div>
-    <script src="./libs/js/jquery.min.js"></script>
-    <script src="./libs/js/jquery.maskedinput.js"></script>
-    <script src="./libs/slick/slick.js"></script>
-    <script src="./libs/js/jquery.magnific-popup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper@11.0.7/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
