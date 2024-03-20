@@ -114,18 +114,18 @@
     display: block;
     white-space: nowrap;
     @include hover;
-    // .search-active & {
-    //   display: none;
-    // }
+    .search-active & {
+      display: none;
+    }
     @media (max-width: $breakpoint-tablet) {
       display: none;
     }
   }
   &__button {
     margin-left: auto;
-    // .search-active & {
-    //   display: none;
-    // }
+    .search-active & {
+      display: none;
+    }
     @media (max-width: $breakpoint-tablet) {
       display: none;
     }
