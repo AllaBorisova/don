@@ -599,6 +599,7 @@
     @media (max-width: $breakpoint-mobile) {
       position: static;
       margin-top: 3rem;
+      max-width: 100%;
     }
   }
 }
@@ -687,6 +688,7 @@
     @media (max-width: $breakpoint-mobile) {
       position: static;
       margin-top: 3rem;
+      max-width: 100%;
     }
   }
 }

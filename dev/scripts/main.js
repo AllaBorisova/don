@@ -45,10 +45,13 @@ formLabels.forEach((formLabel) => {
 //search show input and results
 const searchInput = document.querySelector('.header .search__input');
 const searchBlock = document.querySelector('.header .search');
-const searchIcon = document.querySelector('.header .search__icon');
+const searchIcon = document.querySelector('.header .search__button');
 const header = document.querySelector('.header');
 
 searchIcon.addEventListener('click', (e) => {
+  if (!header.classList.contains('search-active')) {
+    e.preventDefault();
+  }
   header.classList.add('search-active');
   searchInput.focus();
 });

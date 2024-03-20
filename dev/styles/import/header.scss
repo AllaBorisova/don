@@ -70,7 +70,7 @@
   img {
     display: block;
   }
-  @media (max-width: 1280px) {
+  @media (max-width: 1400px) {
     margin-right: 0;
   }
   @media (max-width: $breakpoint-tablet) {
@@ -114,18 +114,18 @@
     display: block;
     white-space: nowrap;
     @include hover;
-    .search-active & {
-      display: none;
-    }
+    // .search-active & {
+    //   display: none;
+    // }
     @media (max-width: $breakpoint-tablet) {
       display: none;
     }
   }
   &__button {
     margin-left: auto;
-    .search-active & {
-      display: none;
-    }
+    // .search-active & {
+    //   display: none;
+    // }
     @media (max-width: $breakpoint-tablet) {
       display: none;
     }
