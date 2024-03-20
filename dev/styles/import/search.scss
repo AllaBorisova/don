@@ -1,6 +1,6 @@
 .search {
   // flex: 1;
-  @include tr;
+  @include tr-slow;
   position: relative;
   height: 5rem;
   width: 5rem;
@@ -12,40 +12,40 @@
   .page-search & {
     width: 100%;
   }
-  &__icon {
-    @include flexcc;
-    @include wh(5rem);
-    cursor: pointer;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    z-index: 7;
-    @include tr;
-    @media (max-width: $breakpoint-tablet) {
-      left: auto;
-      right: 0rem;
-    }
-    svg {
-      @include wh(2.4rem);
-      circle,
-      path {
-        @include tr;
-      }
-    }
-    &:hover {
-      circle,
-      path {
-        stroke: $color-text-accent !important;
-      }
-    }
-    .search-active & {
-      // display: none;
-      // opacity: 0;
-      z-index: 5;
-      right: 1rem;
-      left: auto;
-    }
-  }
+  // &__icon {
+  //   @include flexcc;
+  //   @include wh(5rem);
+  //   cursor: pointer;
+  //   position: absolute;
+  //   top: 0rem;
+  //   left: 0rem;
+  //   z-index: 7;
+  //   @include tr;
+  //   @media (max-width: $breakpoint-tablet) {
+  //     left: auto;
+  //     right: 0rem;
+  //   }
+  //   svg {
+  //     @include wh(2.4rem);
+  //     circle,
+  //     path {
+  //       @include tr;
+  //     }
+  //   }
+  //   &:hover {
+  //     circle,
+  //     path {
+  //       stroke: $color-text-accent !important;
+  //     }
+  //   }
+  //   .search-active & {
+  //     // display: none;
+  //     // opacity: 0;
+  //     z-index: 5;
+  //     right: 1rem;
+  //     left: auto;
+  //   }
+  // }
   &__form {
     // width: 5rem;
     position: relative;
@@ -112,7 +112,7 @@
     width: 100%;
     font-size: 1.6rem;
     font-weight: 400;
-    @include tr;
+    @include tr-slow;
     opacity: 0;
     overflow: hidden;
     padding-right: 7rem;

@@ -105,7 +105,18 @@
       gap: 0rem;
     }
   }
-
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    @media (max-width: 1280px) {
+      right: 16rem;
+    }
+  }
   &__phone {
     font-size: 2rem;
     font-style: normal;
@@ -115,7 +126,7 @@
     white-space: nowrap;
     @include hover;
     .search-active & {
-      display: none;
+      // display: none;
     }
     @media (max-width: $breakpoint-tablet) {
       display: none;
@@ -124,7 +135,7 @@
   &__button {
     margin-left: auto;
     .search-active & {
-      display: none;
+      // display: none;
     }
     @media (max-width: $breakpoint-tablet) {
       display: none;
